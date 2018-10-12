@@ -1,0 +1,25 @@
+<?php
+    $x = rand(0,100);
+    echo "Число ".$x;
+    echo PHP_EOL;
+    $variable1 = 1;
+    $variable2 = 1;
+    if ($variable1 > $x)
+    {
+        echo "Задуманное число НЕ входит в числовой ряд";
+        echo PHP_EOL;
+        echo "КОНЕЦ СКРИПТА 👎";
+    }
+    elseif ($variable1 == $x)
+    {
+        echo "Задуманное число ВХОДИТ в числовой ряд";
+        echo PHP_EOL;
+        echo "КОНЕЦ СКРИПТА 👍";
+    }
+    else
+    {
+        $variable3 = $variable1;
+        $variable1 = $variable1 + $variable2;
+        $variable2 = $variable3;
+    }
+?>
