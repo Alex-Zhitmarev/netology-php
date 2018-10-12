@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>PHP Lesson1 Home work by Alex Zhitmarev</title>
-</head>
-  <body>
-
-  <?php
+<?php
     $name="Alexander Zhitmarev";
     $age=29;
     $email="testmail@gmail.com";
@@ -14,7 +6,7 @@
     $about1="I love to do great things, learn and try new experience!";
     $about2="I'm actually attending web-development courses in Netology";
     $about3="Thanks for reading!"
-  ?>
+?>
 
 <h1>The page of <code><?php echo $name; ?></code></h1>
 <br>
@@ -25,6 +17,3 @@
 <p><code><?php echo $about2; ?></code></p>
 <p><code><?php echo $about1; ?></code></p>
 <p><code><?php echo $about3; ?> 👋 </code></p>
-
-</body>
-</html>
