@@ -1,25 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="#">
+    <title>Zhitmarev Alexander - PHP - lesson1 homework</title>
+</head>
+<body>
+
 <?php
     $x = rand(0,100);
-    echo "Число ".$x;
-    echo PHP_EOL;
+    echo $x;
     $variable1 = 1;
     $variable2 = 1;
-    if ($variable1 > $x)
-    {
-        echo "Задуманное число НЕ входит в числовой ряд";
-        echo PHP_EOL;
-        echo "КОНЕЦ СКРИПТА 👎";
-    }
-    elseif ($variable1 == $x)
-    {
-        echo "Задуманное число ВХОДИТ в числовой ряд";
-        echo PHP_EOL;
-        echo "КОНЕЦ СКРИПТА 👍";
-    }
-    else
-    {
+
+    while ($variable1 < $x;) {
         $variable3 = $variable1;
         $variable1 = $variable1 + $variable2;
         $variable2 = $variable3;
     }
+
+    if ($variable1 > $x) {
+        echo 'Задуманное число НЕ входит в числовой ряд';\
+    }
+    elseif ($variable1 > $x) {
+       echo "Задуманное число ВХОДИТ в числовой ряд";
+    }
+
 ?>
+
+<h1>Алгоритм из доп. ДЗ к лекции 1</h1>
+<p>Ссылка на сам алгоритм - <a href="https://github.com/netology-code/php-2-homeworks/tree/master/intro"> ТУТ </a> </p>
+<p>Допустим, что пользователь ввел число <?php echo $x; ?> </p>
+<p>Выполняется реализованный алгоритм</p>
+<p>И мы получаем ответ -  </p>
+
+</body>
+</html>
