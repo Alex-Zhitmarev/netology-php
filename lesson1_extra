@@ -21,7 +21,7 @@
 
     if ($variable1 > $x)
         echo 'Задуманное число НЕ входит в числовой ряд';
-    elseif ($variable1 > $x)
+    elseif ($variable1 = $x)
        echo "Задуманное число ВХОДИТ в числовой ряд";
 
 ?>
