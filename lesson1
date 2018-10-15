@@ -1,19 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/lesson1_main_stylesheet.css">
+    <title>Zhitmarev Alexander - PHP - lesson1 homework</title>
+</head>
+
+<body>
 <?php
-    $name="Alexander Zhitmarev";
+    $name='Alexander Zhitmarev';
     $age=29;
-    $email="testmail@gmail.com";
-    $city="Saint-Petersburg";
-    $about1="I love to do great things, learn and try new experience!";
-    $about2="I'm actually attending web-development courses in Netology";
-    $about3="Thanks for reading!"
+    $email='testmail@gmail.com';
+    $city='Saint-Petersburg';
+    $about1='I love to do great things, learn and try new experience!';
+    $about2='I am actually attending web-development courses in Netology';
+    $about3='Thanks for reading!';
 ?>
 
-<h1>The page of <code><?php echo $name; ?></code></h1>
-<br>
-<p>Hello! I'm <code><?php echo $age; ?></code> years old</p>
-<p>My email adress is <code><a href="mailto:testmail@gmail.com"><?php echo $email; ?></a></code></p>
-<p>I live in <code><?php echo $city; ?></code></p>
-<br>
-<p><code><?php echo $about2; ?></code></p>
-<p><code><?php echo $about1; ?></code></p>
-<p><code><?php echo $about3; ?> 👋 </code></p>
+<main>
+  <h1>The page of <code><?php echo $name; ?></code></h1>
+  <p>Hello! I'm <code><?php echo $age; ?></code> years old</p>
+  <p>My email adress is <code><a href="mailto:testmail@gmail.com"><?php echo $email; ?></a></code></p>
+  <p>I live in <code><?php echo $city; ?></code></p>
+  <p><code><?php echo $about2; ?></code></p>
+  <p><code><?php echo $about1; ?></code></p>
+  <p><code><?php echo $about3; ?> 👋 </code></p>
+  <p>P.S. Спасибо за обратную связь, очень помогает 💪</p>
+</main>
+
+</body>
+</html>
