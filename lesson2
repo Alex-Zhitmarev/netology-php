@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zhitmarev Alexander - PHP - lesson2 homework</title>
+</head>
+
+<body>
+
+<?php
+$array1=['Africa' => ['Geoemydidae', 'Loxodonta cyclotis', 'Kinixys homeana', 'Lacertilia'],
+    'Eurasia' => ['Aspideretes nigricans', 'Hydrosaurus'],
+    'North America' => ['Cnemaspis', 'Cosymbotus platyurus'],
+    'South America' => ['Cyrtopodion longipes', 'Mediodactylus'],
+    'Australia' => ['Darevskia', 'Eremias acutirostris'],
+    'Antarctica' => ['Aptenodytes forsteri', 'Pygoscelis adeliae', 'Hydrurga']];
+
+$array2= [];
+foreach($array1 as $continentName => $animalArray) {
+    foreach ($animalArray as $animalName) {
+        if (strpos($animalName, ' ') !==false) {
+            array_push($array2, $animalName);
+        }
+    }
+}
+?>
+
+<h1>Netology - PHP - Lesson 2 - homework</h1>
+
+<h2>Task "the Animals..."</h2>
+<br>
+
+<H2>Step 1. Original Array:</H2>
+<p><strong>var_dump</strong> <?php var_dump($array1); ?></p>
+<p><strong>print_r</strong> <?php print_r($array1); ?></p>
+
+<h2>Step 2. show only 2-words names:</h2>
+<p><strong>print_r</strong> <?php print_r($array2); ?></p>
+
+
+</body>
+
+</html>
+
+
