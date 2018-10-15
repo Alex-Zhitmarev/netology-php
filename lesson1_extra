@@ -13,18 +13,16 @@
     $variable1 = 1;
     $variable2 = 1;
 
-    while ($variable1 < $x;) {
+    while ($variable1 < $x) {
         $variable3 = $variable1;
         $variable1 = $variable1 + $variable2;
         $variable2 = $variable3;
     }
 
-    if ($variable1 > $x) {
-        echo 'Задуманное число НЕ входит в числовой ряд';\
-    }
-    elseif ($variable1 > $x) {
+    if ($variable1 > $x)
+        echo 'Задуманное число НЕ входит в числовой ряд';
+    elseif ($variable1 > $x)
        echo "Задуманное число ВХОДИТ в числовой ряд";
-    }
 
 ?>
 
