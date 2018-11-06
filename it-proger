@@ -1,0 +1,42 @@
+<?php
+  session_start();
+  session_destroy ();
+  setcookie('name', $_POST['name'], time() - 3600);
+?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="item-box">
+      <h2>SESSION, COOKIES, GET, POST</h2>
+      <form action="action.php" method="post">
+        <label for="name">Your name</label>
+        <input type="text" name="name">
+        <label for="email">Your email</label>
+        <input type="text" name="email">
+        <label for="tel">Your phone number</label>
+        <input type="text" name="tel">
+        <button type="submit" name="button">SEND DATA</button>
+      </form>
+      <?php
+        echo '1 - Вывожу данные через $_POST / $_GET: ' . $_POST['name'] . '<br>';
+        echo '2 - Вывожу данные через Session: ';
+        if ($_SESSION['name'] != NULL) {
+          echo $_SESSION['name'] . '<br>';
+        }
+        echo '3 - Вывожу данные через Cookie: ';
+        if ($_COOKIE['name'] != NULL) {
+          echo $_COOKIE['name'] . '<br>';
+        }
+      ?>
+
+    </div>
+
+
+  </body>
+</html>
